@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<!--
+    Author: Reece Pieri
+    ID: M087496
+    Date: 25/09/2020
+    Assessment: Java III - Portfolio AT2 Q4
+-->
+
+<html>
+    <head>
+        <title>ToDoo! How-To Guide</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./stylesheet.css">
+    </head>
+
+    <body>
+        <!-- Heading/title -->
+        <div class="flex-container">
+            <div class="header">
+                <h1>ToDoo! How-To Guide</h1>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div>
+            <p>
+                Created by Reece Pieri (M087496). 2/10/2020.<br>
+                ToDoo! is an application designed to assist in task management for small projects.<br>
+                <br>
+                Please forward feedback and bug reports to <rpieri@live class="com au">rpieri@live.com.au.</rpieri@live>
+            </p>
+        </div>
+        <br>
+
+        <!-- Page contents -->
+        <div>
+            <hr>
+            <h2>Contents</h2>
+            <ul id="contents">
+                <h4>Boards</h4>
+                <li><a href="#SaveBoard">How to save boards</a></li>
+                <li><a href="#LoadBoard">How to load boards</a></li>
+                <h4>Columns</h4>
+                <li><a href="#AddColumns">How to add columns</a></li>
+                <li><a href="#RemoveColumns">How to remove columns</a></li>
+                <li><a href="#RemoveAllColumns">How to remove all columns</a></li>
+                <li><a href="#ColumnColour">How to change a column's background colour</a></li>
+                <h4>Cards</h4>
+                <li><a href="#AddCards">How to add cards</a></li>
+                <li><a href="#RemoveCards">How to remove cards</a></li>
+                <li><a href="#RemoveAllCards">How to remove all cards</a></li>
+                <h4>Known Bugs</h4>
+                <li><a href="#Bugs">Known bugs</a></li>
+            </ul>
+            <hr>
+        </div>
+        <br>
+
+        <!-- How-to guide -->
+        <div class="body">
+            <!-- Board information -->
+            <div id="Boards">
+                <div>
+                    <h1>Boards</h1>
+                </div>
+                <p>
+                    Boards contain columns and cards and are built up as the user adds these elements.<br>
+                    When ToDoo! starts, you will be presented with a blank board containing no columns or cards.
+                </p>
+                <br>
+
+                <div id="SaveBoard">
+                    <h3>Saving boards</h3>
+                    <p>
+                        You can save your board to be able to load it up later and continue where you left off.<br>
+                        To save your board go to File > Save Board.<br>
+                        Your board will be saved to a file called "board.bin" in the application directory.<br>
+                        To save multiple boards you must copy or move the "board.bin" file to another location as this file will be overwritten each time a board is saved.
+                    </p>
+                    <img src="./How-To Images/SaveBoard.png">
+                </div>
+                <br>
+
+                <div id="LoadBoard">
+                    <h3>Loading boards</h3>
+                    <p>
+                        To load up an existing board, go to File > Load Board.<br>
+                        The file "board.bin" in the application directory will be loaded and the existing board will be displayed in the main window.<br>
+                        To load an existing board from another location, copy/move the .bin file into the application directory and rename it to "board.bin".
+                        Select File > Load Board and the existing board will be displayed.
+                    </p>
+                    <img src="./How-To Images/LoadBoard.png">
+                </div>
+                <br>
+                <a href="#">>> Top of page</a>
+                <hr>
+            </div>
+            <br>
+
+            <!-- Column information -->
+            <div id="Columns">
+                <div>
+                    <h1>Columns</h1>
+                </div>
+                <p>
+                    A board can contain up to four columns.<br>
+                    Columns contain a heading, which can be customized, and you can also change the background colour with a choice of four preset colours to help define your board.<br>
+                    Columns will resize automatically as they are added and will display equally on the board.
+                </p>
+                <br>
+
+                <div id="AddColumns">
+                    <h3>Adding columns</h3>
+                    <p>
+                        To add a column, press the "Add Column" button in the lower, left-hand corner of the window.<br>
+                        A maximum of four columns can be added to a board.
+                    </p>
+                    <img src="./How-To Images/AddColumn.png">
+                </div>
+                <br>
+
+                <div id="RemoveColumns">
+                    <h3>Removing columns</h3>
+                    <p>
+                        To remove a column, press the "X" button located in the top right-hand corner of the column.<br>
+                        The remaining columns will automatically resize to match the board.
+                    </p>
+                    <img src="./How-To Images/RemoveColumn.png">
+                </div>
+                <br>
+
+                <div id="RemoveAllColumns">
+                    <h3>Removing all columns</h3>
+                    <p>
+                        To remove all columns, go to Edit > Clear Board.<br>
+                        This will remove all columns AND cards from the board, essentially creating a new board.
+                    </p>
+                    <img src="./How-To Images/RemoveAllColumns.png">
+                </div>
+                <br>
+
+                <div id="ColumnColour">
+                    <h3>Changing a columns colour</h3>
+                    <p>
+                        To change the background colour of a column, press the "Colour" button located in the top right-hand corner of the column.<br>
+                        The background colour of the column will cycle through four preset colours to help you define your board.
+                    </p>
+                    <img src="./How-To Images/ChangeColour.png">
+                </div>
+                <br>
+                <a href="#">>> Top of page</a>
+                <hr>
+            </div>
+            <br>
+            
+            <!-- Card information -->
+            <div id="Cards">
+                <div>
+                    <h1>Cards</h1>
+                </div>
+                <p>
+                    A board can contain up to forty (40) cards simultaneously.<br>
+                    Cards contain a task heading and a task description field which can be modified.<br>
+                    Cards can be repositioned around the board by clicking and dragging.<br>
+                    Cards will resize based on the number of columns on the board to ensure it doesn't get too cluttered.
+                </p>
+                <br>
+
+                <div id="AddCards">
+                    <h3>Adding cards</h3>
+                    <p>
+                        To add cards, press the "Add Card" button in the lower, left-hand corner of the window.<br>
+                        A maximum of forty cards can be on a board simultaneously. To add more you must first remove other cards.
+                    </p>
+                    <img src="./How-To Images/AddCard.png">
+                </div>
+                <br>
+
+                <div id="RemoveCards">
+                    <h3>Removing cards</h3>
+                    <p>
+                        To remove a card, press the "X" button located in the top right-hand corner of the card.
+                    </p>
+                    <img src="./How-To Images/RemoveCard.png">
+                </div>
+                <br>
+
+                <div id="RemoveAllCards">
+                    <h3>Removing all cards</h3>
+                    <p>
+                        To remove all cards from the board, go to Edit > Clear Cards.<br>
+                        All cards will be cleared from the board.
+                    </p>
+                    <img src="./How-To Images/RemoveAllCards.png">
+                </div>
+                <br>
+                <a href="#">>> Top of page</a>
+                <hr>
+            </div>
+            <br>
+
+            <!-- Known bugs -->
+            <div id="Bugs">
+                <div>
+                    <h1>Known Bugs</h1>
+                </div>
+                <ul>
+                    <li>Cards can be dragged outside of the window. 4/10/2020</li>
+                </ul>
+                <a href="#">>> Top of page</a>
+                <br>
+        </div>
+    </body>
+</html>
