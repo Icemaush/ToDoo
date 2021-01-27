@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="908.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todolist.ToDoListController">
+   <children>
+      <MenuBar id="menubar" fx:id="menuBar" prefHeight="25.0" prefWidth="1366.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="menuLoadBoard" mnemonicParsing="false" text="Load Board" />
+                  <MenuItem fx:id="menuSaveBoard" mnemonicParsing="false" text="Save Board" />
+                  <MenuItem fx:id="menuClose" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="menuClearCards" mnemonicParsing="false" text="Clear Cards" />
+                  <MenuItem fx:id="menuClearBoard" mnemonicParsing="false" text="Clear Board" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="menuHowTo" mnemonicParsing="false" text="How-To Guide" />
+                  <MenuItem fx:id="menuAbout" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button id="overlay" fx:id="btnAddCard" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="24.0" layoutY="788.0" mnemonicParsing="false" onAction="#btnAddCard_OnClick" prefHeight="37.0" prefWidth="42.0" text="+" textAlignment="CENTER">
+         <font>
+            <Font name="Colonna MT" size="17.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button id="overlay" fx:id="btnAddColumn" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="24.0" layoutY="838.0" mnemonicParsing="false" onAction="#btnAddColumn_OnClick" prefHeight="37.0" prefWidth="42.0" text="+" textAlignment="CENTER">
+         <font>
+            <Font name="Colonna MT" size="17.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Label id="overlay" fx:id="lblAddCard" layoutX="66.0" layoutY="788.0" prefHeight="37.0" prefWidth="107.0" text=" Add Card" textFill="#bcbcbc">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label id="overlay" fx:id="lblAddColumn" layoutX="66.0" layoutY="838.0" prefHeight="37.0" prefWidth="116.0" text=" Add Column" textFill="#bcbcbc">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="boardPane" layoutY="25.0" prefHeight="885.0" prefWidth="1366.0">
+         <children>
+            <Label fx:id="lblLogo" layoutX="509.0" layoutY="305.0" rotate="-8.5" text="ToDoo!" textFill="#6b6b6b">
+               <font>
+                  <Font name="Comic Sans MS" size="108.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
